@@ -8,6 +8,11 @@ on:
         required: true
         default: '100'
         type: string
+      initial_commit:
+        description: 'Start from this commit (optional; commits before d68649f4 do not build)'
+        required: false
+        default: ''
+        type: string
 
 jobs:
   load-targets:
@@ -52,6 +57,7 @@ jobs:
         with:
           target_name: ${{ matrix.target_name }}
           num_commits: ${{ github.event.inputs.num_commits }}
+          initial_commit: ${{ github.event.inputs.initial_commit }}
           build_script: ${{ matrix.build_cmd }}
           elf: ${{ matrix.elf }}
           ld: ${{ matrix.ld }}
