@@ -1,7 +1,7 @@
 [
   {
     "target_name": "nrf52832",
-    "setup_cmd": "bash .github/membrowse/setup.sh nrfx nRF5_SDK nRF5_SDK_Mesh Fusion vqf",
+    "setup_cmd": "bash .github/membrowse/setup.sh nrfx nRF5_SDK nRF5_SDK_Mesh Fusion vqf sdk-nrfxlib",
     "build_cmd": "bash $HOME/iosonata-ci/build.sh ARM/Nordic/nRF52/nRF52832 UartPrbsTxTest Release",
     "elf": "ARM/Nordic/nRF52/nRF52832/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.elf",
     "ld": "ARM/Nordic/nRF52/nRF52832/ldscript/gcc_nrf52_xxaa.ld",
@@ -64,7 +64,7 @@
   },
   {
     "target_name": "ra4m1",
-    "setup_cmd": "bash .github/membrowse/setup.sh Fusion BSEC",
+    "setup_cmd": "bash .github/membrowse/setup.sh Fusion BSEC sdk-nrfxlib",
     "build_cmd": "bash $HOME/iosonata-ci/build.sh ARM/Renesas/RA4/RA4M1 UartPrbsTxTest Release",
     "elf": "ARM/Renesas/RA4/RA4M1/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.elf",
     "ld": "ARM/Renesas/RA4/RA4M1/ldscript/gcc_ra4m1.ld",
