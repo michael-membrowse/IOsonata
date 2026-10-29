@@ -39,6 +39,11 @@ headless_build() {
 	rm -rf "$ws"
 }
 
+# The headless build rewrites the tracked .project files (it re-sorts the
+# linked resources). Restore them so the MemBrowse onboard action can check
+# out the next commit.
+trap 'git checkout -q -- "$LIB_PROJ" "$APP_PROJ" 2>/dev/null || true' EXIT
+
 headless_build "$LIB_PROJ"
 headless_build "$APP_PROJ"
 
