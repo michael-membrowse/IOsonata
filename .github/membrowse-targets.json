@@ -1,0 +1,74 @@
+[
+  {
+    "target_name": "nrf52832",
+    "setup_cmd": "bash .github/membrowse/setup.sh nrfx nRF5_SDK nRF5_SDK_Mesh Fusion vqf",
+    "build_cmd": "bash $HOME/iosonata-ci/build.sh ARM/Nordic/nRF52/nRF52832 UartPrbsTxTest Release",
+    "elf": "ARM/Nordic/nRF52/nRF52832/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.elf",
+    "ld": "ARM/Nordic/nRF52/nRF52832/ldscript/gcc_nrf52_xxaa.ld",
+    "map_file": "ARM/Nordic/nRF52/nRF52832/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "nrf52840",
+    "setup_cmd": "bash .github/membrowse/setup.sh nrfx nRF5_SDK nRF5_SDK_Mesh Fusion vqf",
+    "build_cmd": "bash $HOME/iosonata-ci/build.sh ARM/Nordic/nRF52/nRF52840 UartPrbsTxTest Release",
+    "elf": "ARM/Nordic/nRF52/nRF52840/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.elf",
+    "ld": "ARM/Nordic/nRF52/nRF52840/ldscript/gcc_nrf52840_xxaa.ld",
+    "map_file": "ARM/Nordic/nRF52/nRF52840/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "nrf54l15",
+    "setup_cmd": "bash .github/membrowse/setup.sh nrfx sdk-nrf-bm sdk-nrfxlib sdk-oberon-psa-crypto sdk-mbedtls Fusion",
+    "build_cmd": "bash $HOME/iosonata-ci/build.sh ARM/Nordic/nRF54/nRF54L15 UartPrbsTxTest Release",
+    "elf": "ARM/Nordic/nRF54/nRF54L15/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.elf",
+    "ld": "ARM/Nordic/nRF54/ldscript/nrf54l15_xxaa_application.ld",
+    "map_file": "ARM/Nordic/nRF54/nRF54L15/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "stm32h753",
+    "setup_cmd": "bash .github/membrowse/setup.sh lwip Fusion BSEC",
+    "build_cmd": "bash $HOME/iosonata-ci/build.sh ARM/ST/STM32H7xx/STM32H753 UartPrbsTxTest Release",
+    "elf": "ARM/ST/STM32H7xx/STM32H753/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.elf",
+    "ld": "ARM/ST/STM32H7xx/ldscript/gcc_stm32h753xx.ld",
+    "map_file": "ARM/ST/STM32H7xx/STM32H753/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "stm32l476",
+    "setup_cmd": "bash .github/membrowse/setup.sh lwip Fusion BSEC",
+    "build_cmd": "bash $HOME/iosonata-ci/build.sh ARM/ST/STM32L4xx/STM32L476 UartPrbsTxTest Release",
+    "elf": "ARM/ST/STM32L4xx/STM32L476/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.elf",
+    "ld": "ARM/ST/STM32L4xx/ldscript/gcc_stm32l476xx.ld",
+    "map_file": "ARM/ST/STM32L4xx/STM32L476/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "sam4lcxc",
+    "setup_cmd": "bash .github/membrowse/setup.sh",
+    "build_cmd": "bash $HOME/iosonata-ci/build.sh ARM/Microchip/SAM4L/SAM4LCxC UartPrbsTxTest Release",
+    "elf": "ARM/Microchip/SAM4L/SAM4LCxC/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.elf",
+    "ld": "ARM/Microchip/SAM4L/ldscript/gcc_sam4lx8.ld",
+    "map_file": "ARM/Microchip/SAM4L/SAM4LCxC/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "lpc54628",
+    "setup_cmd": "bash .github/membrowse/setup.sh lwip",
+    "build_cmd": "bash $HOME/iosonata-ci/build.sh ARM/NXP/LPC546xx/LPC54628 UartPrbsTxTest Release",
+    "elf": "ARM/NXP/LPC546xx/LPC54628/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.elf",
+    "ld": "ARM/NXP/LPC546xx/ldscript/gcc_lpc54628.ld",
+    "map_file": "ARM/NXP/LPC546xx/LPC54628/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.map",
+    "linker_vars": ""
+  },
+  {
+    "target_name": "ra4m1",
+    "setup_cmd": "bash .github/membrowse/setup.sh Fusion BSEC",
+    "build_cmd": "bash $HOME/iosonata-ci/build.sh ARM/Renesas/RA4/RA4M1 UartPrbsTxTest Release",
+    "elf": "ARM/Renesas/RA4/RA4M1/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.elf",
+    "ld": "ARM/Renesas/RA4/RA4M1/ldscript/gcc_ra4m1.ld",
+    "map_file": "ARM/Renesas/RA4/RA4M1/exemples/UartPrbsTxTest/ioc/Release/UartPrbsTxTest.map",
+    "linker_vars": ""
+  }
+]
