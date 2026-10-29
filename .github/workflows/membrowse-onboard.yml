@@ -55,6 +55,8 @@ jobs:
           build_script: ${{ matrix.build_cmd }}
           elf: ${{ matrix.elf }}
           ld: ${{ matrix.ld }}
+          # gcc_arm_flash.ld, included by every MCU script, is in ARM/ldscript
+          ld_include_dirs: ARM/ldscript
           map_file: ${{ matrix.map_file }}
           linker_vars: ${{ matrix.linker_vars }}
           binary_search: 'true'
